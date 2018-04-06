@@ -10,6 +10,7 @@ public class populateSpawns : MonoBehaviour
     private MeshCollider meshCollider;
 
     // Gather the bounding box vector positions needed to generate the random item locations
+    // Serialize the x,y, and z axis values to use for random number generation
     [SerializeField]
     private float spawnTerrainXMin;
     [SerializeField]
@@ -18,17 +19,11 @@ public class populateSpawns : MonoBehaviour
     private float spawnTerrainZMin;
     [SerializeField]
     private float spawnTerrainZMax;
-
-    // [SerializeField]
-    // private GameObject spawnTerrain;
-
     [SerializeField]
     private int totalSpawnMinimum = 12;
 
     private float spawnArea = 100f;
     public static int totalSpawns;
-
-    // Serialize the x,y, and z axis values to use for random number generation
 
     // Update is called once per frame
     void Awake()
