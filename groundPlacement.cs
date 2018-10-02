@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class groundPlacement_v2 : MonoBehaviour
+public class groundPlacement : MonoBehaviour
 {
 
 	[SerializeField]
